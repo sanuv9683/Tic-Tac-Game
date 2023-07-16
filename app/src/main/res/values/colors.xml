@@ -14,4 +14,10 @@
     <color name="rareUse">#144D53</color>
     <color name="ParrotGreen">#23D173</color>
     <color name="whiteLight">#F5F2F2</color>
+
+
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#F3F0F1</color>
+    <color name="light_black">#504f4f</color>
 </resources>

@@ -1,0 +1,73 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/github" />
+
+    <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="About Us"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+    />
+
+    <TextView
+            android:id="@+id/autitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Welcome to Kasun's Tic Tac Game!"
+            android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="In this exciting game, you'll dive into the world of strategic moves and intense competition. Kasun's Tic Tac Game takes the classic tic-tac-toe experience to a whole new level with innovative gameplay and stunning visuals."
+            android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/textViewDescriptionTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Challenge your friends or engage in thrilling battles against AI opponents. With multiple difficulty levels, you can test your skills and improve your strategies as you progress. Whether you're a seasoned player or new to the game, Kasun's Tic Tac Game offers an enjoyable experience for everyone."
+            android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/textViewDescriptionThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Immerse yourself in the sleek and user-friendly interface, designed to provide a seamless and intuitive gaming experience. The smooth animations and vibrant graphics add a touch of excitement to every move you make."
+            android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/textViewDescriptionFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="But it's not just about winning; it's about having fun and connecting with others. Kasun's Tic Tac Game offers a multiplayer mode where you can compete against players from around the world. Challenge your friends or make new ones as you embark on thrilling tic-tac-toe battles."
+            android:textColor="@android:color/black"/>
+
+    <Button
+            android:id="@+id/buttonContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Contact Us"
+            android:textColor="@android:color/white"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textSize="18sp" />
+
+</LinearLayout>

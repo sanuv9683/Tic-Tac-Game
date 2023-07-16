@@ -7,7 +7,7 @@
     android:background="@color/whiteLight"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="lk.kasun.tictac.MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="horizontal"

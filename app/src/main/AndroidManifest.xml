@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TicTacGame"
         tools:targetApi="31">
         <activity
-            android:name=".Splash_Screen"
+            android:name="lk.kasun.tictac.Splash_Screen"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -26,7 +26,7 @@
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="lk.kasun.tictac.MainActivity"
             android:exported="true">
 
 
