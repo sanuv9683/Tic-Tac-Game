@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:id="@+id/customR"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_margin="20dp"
+        android:id="@+id/layuttt"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/play1"
+            android:hint="@string/hintPlayer1"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:paddingEnd="5dp"
+            android:layout_marginEnd="4dp"
+            android:paddingStart="7dp"
+            android:background="@drawable/edit_text_border"
+            android:textColorHint="@color/DarkBlack"
+            android:layout_height="37dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/play2"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:hint="@string/hintPlayer2"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:textSize="13sp"
+            android:paddingEnd="5dp"
+            android:paddingStart="7dp"
+            android:background="@drawable/edit_text_border"
+            android:textColorHint="@color/DarkBlack"
+            android:layout_height="37dp"
+            android:autofillHints=""
+            tools:ignore="TextFields">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:text="@string/play"
+            android:layout_below="@id/layuttt"
+            android:id="@+id/playBtn"
+            android:textSize="16sp"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" android:layout_marginBottom="20dp" android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+</RelativeLayout>

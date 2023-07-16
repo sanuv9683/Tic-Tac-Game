@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/animationView"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/tae_tac"
+        app:lottie_loop="true">
+
+    </com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/tia_tac_play"
+        android:textSize="33sp"
+        android:textColor="@color/DarkBlack"
+        android:id="@+id/txt"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Developed By K S Vithanage - 2023"
+        android:textStyle="bold"
+        android:layout_marginTop="5sp"
+        style="@style/TextAppearance.Material3.BodySmall"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kasun\'s Tic-Tac Game</string>
+    <string name="Descp">Their is a Icon</string>
+    <string name="insta">Like us</string>
+    <string name="hintPlayer1">1st Player Name</string>
+    <string name="hintPlayer2">2nd Player Name</string>
+    <string name="play">Let\'s Play</string>
+    <string name="tia_tac_play">Kasun\'s Tia-Tac Play</string>
+</resources>
