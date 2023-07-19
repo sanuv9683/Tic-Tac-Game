@@ -17,7 +17,7 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
     int gameFinished = 100;
     int flag = 0;
-    TextView t1, t2, t3, t4, t5, t6, t7, t8, t9, t, tt, ttt, fol,contact,about_us,help;
+    TextView b1, b2, b3, b4, b5, b6, b7, b8, b9, t, tt, ttt, fol,contact,about_us,help;
     int count = 0;
     static boolean Exit = false;
     ImageView imgM, repeat, exit;
@@ -30,15 +30,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        t1 = (TextView) findViewById(R.id.ctxt1);
-        t2 = (TextView) findViewById(R.id.ctxt2);
-        t3 = (TextView) findViewById(R.id.ctxt3);
-        t4 = (TextView) findViewById(R.id.ctxt4);
-        t5 = (TextView) findViewById(R.id.ctxt5);
-        t6 = (TextView) findViewById(R.id.ctxt6);
-        t7 = (TextView) findViewById(R.id.ctxt7);
-        t8 = (TextView) findViewById(R.id.ctxt8);
-        t9 = (TextView) findViewById(R.id.ctxt9);
+        b1 = (TextView) findViewById(R.id.ctxt1);
+        b2 = (TextView) findViewById(R.id.ctxt2);
+        b3 = (TextView) findViewById(R.id.ctxt3);
+        b4 = (TextView) findViewById(R.id.ctxt4);
+        b5 = (TextView) findViewById(R.id.ctxt5);
+        b6 = (TextView) findViewById(R.id.ctxt6);
+        b7 = (TextView) findViewById(R.id.ctxt7);
+        b8 = (TextView) findViewById(R.id.ctxt8);
+        b9 = (TextView) findViewById(R.id.ctxt9);
         imgM = (ImageView) findViewById(R.id.mood);
         fol = (TextView) findViewById(R.id.follow);
         contact = (TextView) findViewById(R.id.contactus);
@@ -104,9 +104,9 @@ public class MainActivity extends AppCompatActivity {
         repeat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                t = t1;
-                tt = t2;
-                ttt = t3;
+                t = b1;
+                tt = b2;
+                ttt = b3;
                 gameAgain();
             }
         });
@@ -144,40 +144,40 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (count > 4) {
-                tt1 = t1.getText().toString();
-                tt2 = t2.getText().toString();
-                tt3 = t3.getText().toString();
-                tt4 = t4.getText().toString();
-                tt5 = t5.getText().toString();
-                tt6 = t6.getText().toString();
-                tt7 = t7.getText().toString();
-                tt8 = t8.getText().toString();
-                tt9 = t9.getText().toString();
+                tt1 = b1.getText().toString();
+                tt2 = b2.getText().toString();
+                tt3 = b3.getText().toString();
+                tt4 = b4.getText().toString();
+                tt5 = b5.getText().toString();
+                tt6 = b6.getText().toString();
+                tt7 = b7.getText().toString();
+                tt8 = b8.getText().toString();
+                tt9 = b9.getText().toString();
 
-                if (t1.getText().toString().equals(t2.getText().toString()) && t2.getText().toString().equals(t3.getText().toString()) && !t1.getText().toString().equals("")) {
+                if (b1.getText().toString().equals(b2.getText().toString()) && b2.getText().toString().equals(b3.getText().toString()) && !b1.getText().toString().equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t1, t2, t3);
+                    afterWinner(b1, b2, b3);
                 } else if (tt1.equals(tt4) && tt4.equals(tt7) && !tt1.equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t1, t4, t7);
+                    afterWinner(b1, b4, b7);
                 } else if (tt4.equals(tt5) && tt5.equals(tt6) && !tt4.equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t4, t5, t6);
+                    afterWinner(b4, b5, b6);
                 } else if (tt7.equals(tt8) && tt7.equals(tt9) && !tt7.equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t7, t8, t9);
+                    afterWinner(b7, b8, b9);
                 } else if (tt2.equals(tt5) && tt5.equals(tt8) && !tt2.equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t2, t5, t8);
+                    afterWinner(b2, b5, b8);
                 } else if (tt3.equals(tt6) && tt6.equals(tt9) && !tt3.equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t6, t9, t3);
+                    afterWinner(b6, b9, b3);
                 } else if (tt1.equals(tt5) && tt5.equals(tt9) && !tt1.equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t1, t5, t9);
+                    afterWinner(b1, b5, b9);
                 } else if (tt3.equals(tt5) && tt5.equals(tt7) && !tt7.equals("")) {
                     Toast.makeText(this, "Congratulation. You Won.!", Toast.LENGTH_SHORT).show();
-                    afterWinner(t3, t5, t7);
+                    afterWinner(b3, b5, b7);
                 } else if (!tt7.equals("") && !tt1.equals("") && !tt2.equals("") && !tt3.equals("") && !tt4.equals("") && !tt5.equals("")
                         && !tt6.equals("") && !tt8.equals("") && !tt9.equals("")) {
                     Toast.makeText(this, "Try Again. Match Draw", Toast.LENGTH_SHORT).show();
@@ -227,17 +227,17 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 getValue();
                 gameFinished = 100;
-                t1.setText("");
-                t2.setText("");
-                t3.setText("");
-                t4.setText("");
-                t5.setText("");
-                t6.setText("");
-                t7.setText("");
-                t8.setText("");
+                b1.setText("");
+                b2.setText("");
+                b3.setText("");
+                b4.setText("");
+                b5.setText("");
+                b6.setText("");
+                b7.setText("");
+                b8.setText("");
                 count = 0;
                 normalColourAgain(t, ttt, tt);
-                t9.setText("");
+                b9.setText("");
             }
         }, 4000);
     }

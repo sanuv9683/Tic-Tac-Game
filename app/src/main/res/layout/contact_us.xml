@@ -18,11 +18,13 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="5dp"
             android:text="Contact Us"
-            android:textColor="#ce3232"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
             android:textSize="40sp"
-            android:typeface="serif"/>
+            />
 
     <EditText
+            android:id="@+id/first_name"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimaryDark"
@@ -30,6 +32,7 @@
             android:inputType="textPersonName"/>
 
     <EditText
+            android:id="@+id/email"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -39,6 +42,7 @@
             android:inputType="textEmailAddress"/>
 
     <EditText
+            android:id="@+id/tp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimaryDark"
@@ -46,6 +50,7 @@
             android:inputType="phone"/>
 
     <EditText
+            android:id="@+id/message_d"
             android:layout_width="fill_parent"
             android:layout_height="150dp"
             android:layout_marginBottom="10dp"
@@ -60,6 +65,7 @@
             android:padding="5dp"/>
 
     <Button
+            android:id="@+id/send_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -69,13 +75,14 @@
             android:paddingRight="70dp"
             android:text="Submit"
             android:textColor="#fff"/>
+
     <ImageView
             android:id="@+id/fixed_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="25dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="0dp"
