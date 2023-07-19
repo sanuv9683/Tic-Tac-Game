@@ -9,12 +9,12 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import com.example.tic_tacgame.R;
 
-public class CustomName {
+public class UserNames {
     MainActivity mainActivity;
     String[] add = new String[2];
     Dialog dialog;
 
-    public CustomName(MainActivity mainActivity, String st) {
+    public UserNames(MainActivity mainActivity, String st) {
         this.mainActivity = mainActivity;
     }
 

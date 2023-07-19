@@ -1,342 +1,413 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:gravity="center"
-    android:background="@color/whiteLight"
-    android:orientation="vertical"
-    android:layout_height="match_parent"
-    tools:context="lk.kasun.tictac.MainActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center"
-    android:layout_marginBottom="25dp"
-    android:layout_height="wrap_content">
-   <RadioGroup
-       android:layout_width="wrap_content"
-       android:weightSum="4"
-       android:id="@+id/Rgroup"
-       android:gravity="center"
-       android:orientation="horizontal"
-       android:layout_height="match_parent">
-      <RadioButton
-          android:layout_width="wrap_content"
-          android:text="Player 1"
-          android:id="@+id/rgP1"
-          android:layout_marginRight="25dp"
-          android:textSize="17dp"
-          android:textAllCaps="true"
-          style="@style/TextAppearance.Material3.TitleMedium"
-          android:layout_weight="2"
-          android:layout_height="wrap_content">
-      </RadioButton>
-      <RadioButton
-          android:layout_width="wrap_content"
-          android:text="Player 2"
-          android:id="@+id/rgP2"
-          android:layout_weight="2"
-          android:textAllCaps="true"
-          android:layout_marginLeft="15dp"
-          android:textSize="17dp"
-          style="@style/TextAppearance.Material3.TitleMedium"
-          android:layout_height="wrap_content">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:background="@color/whiteLight"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              tools:context="lk.kasun.tictac.MainActivity">
 
-      </RadioButton>
-
-   </RadioGroup>
-
-</LinearLayout>
-  <GridLayout
-      android:layout_width="wrap_content"
-      android:columnCount="3"
-      android:rowCount="3"
-      android:layout_height="wrap_content">
-
-     <com.google.android.material.card.MaterialCardView
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         android:layout_margin="7dp"
-         android:layout_gravity="center"
-         app:cardCornerRadius="9dp"
-
-         android:id="@+id/card1">
-        <TextView
+    <LinearLayout
             android:layout_width="match_parent"
-            android:textSize="27sp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="check"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:id="@+id/ctxt1"
-            android:layout_height="match_parent">
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content">
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/Rgroup"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Player 1"
+                    android:id="@+id/rgP1"
+                    android:layout_marginRight="25dp"
+                    android:textSize="17dp"
+                    android:textAllCaps="true"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Player 2"
+                    android:id="@+id/rgP2"
+                    android:layout_weight="2"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="17dp"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_height="wrap_content">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
 
-        </TextView>
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                android:layout_margin="7dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card1">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="27sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="check"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt1"
+                    android:layout_height="match_parent">
+            </TextView>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
 
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card2">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt2"
+                    android:layout_height="match_parent">
 
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         app:cardCornerRadius="9dp"
-         android:id="@+id/card2">
-        <TextView
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card3">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:onClick="check"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt3"
+                    android:layout_height="match_parent">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card4">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt4"
+                    android:layout_height="match_parent">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card5">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt5"
+                    android:layout_height="match_parent">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card6">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt6"
+                    android:layout_height="match_parent">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card7">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="27sp"
+                    android:onClick="check"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt7"
+                    android:layout_height="match_parent">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                app:cardCornerRadius="9dp"
+                android:clickable="false"
+                android:id="@+id/card8">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt8"
+                    android:layout_height="match_parent">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_margin="7dp"
+                android:elevation="1dp"
+                android:clickable="false"
+                app:cardCornerRadius="9dp"
+                android:id="@+id/card9">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:gravity="center"
+                    android:id="@+id/ctxt9"
+                    android:layout_height="match_parent">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+    </GridLayout>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="220dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="45dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/Descp"
+
+                    android:id="@+id/repeat"
+                    android:src="@drawable/repeat_24"
+                    android:layout_height="38dp">
+
+            </ImageView>
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_toRightOf="@+id/repeat"
+                    android:layout_marginStart="25dp"
+                    android:contentDescription="@string/Descp"
+                    android:id="@+id/mood"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/win"
+                    android:layout_height="38dp">
+
+            </ImageView>
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_toRightOf="@+id/mood"
+                    android:contentDescription="@string/Descp"
+                    android:id="@+id/Exit"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_exit"
+                    android:layout_height="38dp">
+
+            </ImageView>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
             android:layout_width="match_parent"
-            android:onClick="check"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:id="@+id/ctxt2"
-            android:layout_height="match_parent">
-
-        </TextView>
-
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
-
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         app:cardCornerRadius="9dp"
-         android:id="@+id/card3">
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/github"
+                android:layout_height="30dp">
+        </ImageView>
         <TextView
-            android:layout_width="match_parent"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            android:onClick="check"
-            style="@style/TextAppearance.Material3.TitleMedium"
-            android:gravity="center"
-            android:id="@+id/ctxt3"
-            android:layout_height="match_parent">
-
+                android:layout_width="wrap_content"
+                android:text="@string/insta"
+                android:textSize="19sp"
+                android:id="@+id/follow"
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content">
         </TextView>
+    </LinearLayout>
 
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
-
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         app:cardCornerRadius="9dp"
-         android:id="@+id/card4">
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="85dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="45dp">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center">
+        <ImageView
+                android:src="@drawable/help"
+                android:id="@+id/helpscreen"
+                android:layout_width="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_height="30dp"/>
         <TextView
-            android:layout_width="match_parent"
-            android:onClick="check"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
-            android:gravity="center"
-            android:id="@+id/ctxt4"
-            android:layout_height="match_parent">
+                android:text="Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:clickable="true"
+                android:textSize="19sp"
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:id="@+id/textView3"/>
+    </LinearLayout>
+    </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-        </TextView>
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="320dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="45dp">
 
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
+       <RelativeLayout
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center">
 
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         app:cardCornerRadius="9dp"
-         android:id="@+id/card5">
-        <TextView
-            android:layout_width="match_parent"
-            android:onClick="check"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
-            android:gravity="center"
-            android:id="@+id/ctxt5"
-            android:layout_height="match_parent">
+            <ImageView
+                    android:src="@drawable/contact"
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            <TextView
+                    android:text="Contact Us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true"
+                    android:textSize="19sp"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:id="@+id/textView"/>
 
-        </TextView>
+            <ImageView
+                    android:src="@drawable/about_us"
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="30dp"/>
+            <TextView
+                    android:text="About Us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true"
+                    android:textSize="19sp"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:id="@+id/textView2"/>
+        </LinearLayout>
+       </RelativeLayout>
 
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
-
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         app:cardCornerRadius="9dp"
-         android:id="@+id/card6">
-        <TextView
-            android:layout_width="match_parent"
-            android:onClick="check"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
-            android:gravity="center"
-            android:id="@+id/ctxt6"
-            android:layout_height="match_parent">
-
-        </TextView>
-
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
-
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         app:cardCornerRadius="9dp"
-         android:id="@+id/card7">
-        <TextView
-            android:layout_width="match_parent"
-            android:textSize="27sp"
-            android:onClick="check"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
-            android:gravity="center"
-            android:id="@+id/ctxt7"
-            android:layout_height="match_parent">
-
-        </TextView>
-
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
-
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         app:cardCornerRadius="9dp"
-         android:clickable="false"
-         android:id="@+id/card8">
-        <TextView
-            android:layout_width="match_parent"
-            android:onClick="check"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
-            android:gravity="center"
-            android:id="@+id/ctxt8"
-            android:layout_height="match_parent">
-
-        </TextView>
-
-     </com.google.android.material.card.MaterialCardView>
-     <com.google.android.material.card.MaterialCardView
-
-         android:layout_height="60dp"
-         android:layout_width="70dp"
-         android:layout_margin="7dp"
-         android:elevation="1dp"
-         android:clickable="false"
-         app:cardCornerRadius="9dp"
-         android:id="@+id/card9">
-        <TextView
-            android:layout_width="match_parent"
-            android:onClick="check"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            style="@style/TextAppearance.Material3.TitleMedium"
-            android:gravity="center"
-            android:id="@+id/ctxt9"
-            android:layout_height="match_parent">
-
-        </TextView>
-
-     </com.google.android.material.card.MaterialCardView>
-
-
-
-  </GridLayout>
-
-
-   <com.google.android.material.card.MaterialCardView
-
-       android:layout_width="220dp"
-       android:orientation="horizontal"
-       app:cardCornerRadius="12dp"
-       android:layout_marginTop="50dp"
-       android:layout_height="45dp">
-      <RelativeLayout
-          android:layout_width="match_parent"
-          android:gravity="center"
-          android:layout_height="match_parent">
-      <ImageView
-          android:layout_width="40dp"
-          android:clickable="true"
-          android:layout_centerVertical="true"
-          android:contentDescription="@string/Descp"
-
-          android:id="@+id/repeat"
-          android:src="@drawable/repeat_24"
-          android:layout_height="38dp">
-
-      </ImageView>
-      <ImageView
-          android:layout_width="40dp"
-          android:layout_toRightOf="@+id/repeat"
-          android:layout_marginStart="25dp"
-          android:contentDescription="@string/Descp"
-          android:id="@+id/mood"
-          android:layout_centerVertical="true"
-          android:src="@drawable/mood_happy"
-          android:layout_height="38dp">
-
-      </ImageView>
-      <ImageView
-          android:layout_width="40dp"
-          android:layout_marginStart="25dp"
-          android:layout_toRightOf="@+id/mood"
-          android:contentDescription="@string/Descp"
-          android:id="@+id/Exit"
-          android:clickable="true"
-          android:layout_centerVertical="true"
-          android:src="@drawable/ic_baseline_exit"
-          android:layout_height="38dp">
-
-      </ImageView>
-</RelativeLayout>
-
-   </com.google.android.material.card.MaterialCardView>
-
-
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:orientation="horizontal"
-       android:gravity="center"
-       android:layout_marginTop="50dp"
-       android:layout_height="wrap_content">
-
-      <ImageView
-          android:layout_width="30dp"
-          android:src="@drawable/github"
-          android:layout_height="30dp">
-
-      </ImageView>
-      <TextView
-          android:layout_width="wrap_content"
-          android:text="@string/insta"
-          android:textSize="19sp"
-          android:id="@+id/follow"
-          style="@style/TextAppearance.Material3.TitleMedium"
-          android:textColor="@color/black"
-          android:clickable="true"
-          android:layout_marginLeft="8dp"
-          android:layout_height="wrap_content">
-
-      </TextView>
-
-   </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>

@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         fol.setTypeface(type);
 
 
-        CustomName customName = new CustomName(this, "test");
-        customName.execute();
+        UserNames userNames = new UserNames(this, "test");
+        userNames.execute();
 
         rGroup = (RadioGroup) findViewById(R.id.Rgroup);
         rb1 = (RadioButton) findViewById(R.id.rgP1);
