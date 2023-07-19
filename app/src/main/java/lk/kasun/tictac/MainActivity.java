@@ -17,7 +17,7 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
     int gameFinished = 100;
     int flag = 0;
-    TextView t1, t2, t3, t4, t5, t6, t7, t8, t9, t, tt, ttt, fol;
+    TextView t1, t2, t3, t4, t5, t6, t7, t8, t9, t, tt, ttt, fol,contact,about_us,help;
     int count = 0;
     static boolean Exit = false;
     ImageView imgM, repeat, exit;
@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         t9 = (TextView) findViewById(R.id.ctxt9);
         imgM = (ImageView) findViewById(R.id.mood);
         fol = (TextView) findViewById(R.id.follow);
+        contact = (TextView) findViewById(R.id.contactus);
+        about_us = (TextView) findViewById(R.id.about_us);
+        help = (TextView) findViewById(R.id.help);
 
         repeat = (ImageView) findViewById(R.id.repeat);
         exit = (ImageView) findViewById(R.id.Exit);
@@ -64,6 +67,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ContactUs.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        about_us.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AboutUs.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Help.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,6 +110,11 @@ public class MainActivity extends AppCompatActivity {
                 gameAgain();
             }
         });
+    }
+
+    public void openNewScreen(View view) {
+        Intent intent = new Intent(this, AboutUs.class);
+        startActivity(intent);
     }
 
     private void getValue() {

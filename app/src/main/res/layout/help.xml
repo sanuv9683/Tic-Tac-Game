@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/whiteLight"
+        android:padding="16dp"
+        tools:context="lk.kasun.tictac.Help">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/win"/>
+                <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Tic Tac Toe Help"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                />
+                <TextView
+                        android:id="@+id/autitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Welcome to Kasun's Tic Tac Game!"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/objective_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24sp"
+                        android:textStyle="bold"
+                        android:text="Objective"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/object_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="The objective of Tic Tac Toe is to get three of your markers (either X or O) in a row, column, or diagonal on the game board."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/gameplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="Gameplay"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/gameplay_d1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="01. The game is played on a 3x3 grid."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/gameplay_d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="02. Two players take turns, one using X markers, and the other using O markers."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/gameplay_d3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="03. Players place their markers on an empty spot on the grid by selecting the corresponding cell."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/gameplay_d4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="04. The first player to get three of their markers in a row, column, or diagonal wins the game."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/gameplay_d5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="05. If all spots on the grid are filled without a winner, the game ends in a draw."
+                        android:textColor="@android:color/black"/>
+
+
+                <TextView
+                        android:id="@+id/rules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="Rules"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/rules_d1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="1. Players take turns, starting with X."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/rules_d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="02. A player can only place their marker on an empty spot on the grid."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/rules_d3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="03. Once placed, markers cannot be moved or removed."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/rules_d4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="04. The game ends when a player wins or the game is a draw."
+                        android:textColor="@android:color/black"/>
+
+
+                <TextView
+                        android:id="@+id/winning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="Winning Conditions"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/winning_d1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="A player wins the game if they have three of their markers in any of the following combinations:"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/winning_d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="01. Three in a row horizontally."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/winning_d3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="02. Three in a column vertically."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/winning_d4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="03. Three in a diagonal (top-left to bottom-right or top-right to bottom-left)."
+                        android:textColor="@android:color/black"/>
+
+
+                <TextView
+                        android:id="@+id/htp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="How to Play"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="01. Launch the Tic Tac Toe game application."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="02. Enter your name and your friends name."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="03. The game board will be displayed, initially empty."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="04. Player X starts the game."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="05. To place a marker, tap on an empty cell on the grid."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="06. The marker will appear in the selected cell."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="07. Players take turns until there is a winner or the game ends in a draw."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="08. If there is a winner, the game will display the winning player."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="09. If the game ends in a draw, it will be indicated as a tie(draw)."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/htp_d10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="10. To start a new game, tap on the Restart button."
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:id="@+id/tips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="Tips"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/tips_d1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="01. Plan ahead and try to block your opponent's moves."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/tips_d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="02. Look for opportunities to create winning combinations."
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:id="@+id/tips_d3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="03. Pay attention to the opponent's moves and adjust your strategy accordingly."
+                        android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+                android:id="@+id/fixed_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/home"
+        />
+
+    </RelativeLayout>
+</LinearLayout>

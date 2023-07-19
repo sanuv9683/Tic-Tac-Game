@@ -352,7 +352,7 @@
                 android:clickable="true"
                 android:textSize="19sp"
                 style="@style/TextAppearance.Material3.TitleMedium"
-                android:id="@+id/textView3"/>
+                android:id="@+id/help"/>
     </LinearLayout>
     </RelativeLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -379,7 +379,9 @@
                     android:src="@drawable/contact"
                     android:id="@+id/imageView"
                     android:layout_width="30dp"
-                    android:layout_height="30dp"/>
+                    android:layout_height="30dp"
+                    android:onClick="openNewScreen"
+            />
             <TextView
                     android:text="Contact Us"
                     android:layout_width="wrap_content"
@@ -388,7 +390,7 @@
                     android:clickable="true"
                     android:textSize="19sp"
                     style="@style/TextAppearance.Material3.TitleMedium"
-                    android:id="@+id/textView"/>
+                    android:id="@+id/contactus"/>
 
             <ImageView
                     android:src="@drawable/about_us"
@@ -404,7 +406,7 @@
                     android:clickable="true"
                     android:textSize="19sp"
                     style="@style/TextAppearance.Material3.TitleMedium"
-                    android:id="@+id/textView2"/>
+                    android:id="@+id/about_us"/>
         </LinearLayout>
        </RelativeLayout>
 
